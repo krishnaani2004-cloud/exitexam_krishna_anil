@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enterprise Revenue Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="p-5 mb-4 bg-dark text-white rounded-3 shadow-lg">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Enterprise Revenue Engine</h1>
+                <p class="col-md-8 fs-4">Predictive decision support using Random Forest Regression to estimate top-line revenue from corporate structures and financial metrics.</p>
+                <a href="/predict_form" class="btn btn-primary btn-lg px-4">Start Forecasting</a>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3>Model Overview</h3>
+                        <p>Our ensemble model explains approximately <strong>71.82%</strong> of the variance in enterprise top-line revenue ($R^2 = 71.82\%$).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3>Top Drivers</h3>
+                        <ul>
+                            <li>Net Income (relative importance ~59.8%)</li>
+                            <li>Market Capitalization (relative importance ~35.0%)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
